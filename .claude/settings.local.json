@@ -3,7 +3,12 @@
     "allow": [
       "WebSearch",
       "WebFetch(domain:brave.com)",
-      "mcp__tavily__tavily_search"
+      "mcp__tavily__tavily_search",
+      "Bash(ps aux:*)",
+      "Bash(sort -k4 -rn)",
+      "Bash(awk '{print $4\"% \"$11}')",
+      "Bash(cat ~/Library/Logs/Homebrew/ollama/*.log)",
+      "Bash(log show:*)"
     ]
   }
 }

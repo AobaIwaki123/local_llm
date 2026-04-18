@@ -2,6 +2,12 @@
 
 最新のLLMモデルを試して知見を蓄積するプロジェクト。M5 / 32GB Mac上で動作。
 
+## Models
+
+| モデル | 特徴 | ドキュメント |
+|--------|------|-------------|
+| [qwen3.6-35b-a3b](./qwen3.6-35b-a3b/) | 35B MoE / SWE-Bench 73.4% / Apache 2.0 | [setup](./qwen3.6-35b-a3b/setup.md) / [tasks](./qwen3.6-35b-a3b/tasks.md) |
+
 ## MCP Servers
 
 Claude Codeから利用できるMCPサーバーを追加済み。fetch/ollamaは `~/.claude/settings.json`、tavilyは `~/.claude.json` で管理。

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:brave.com)",
+      "mcp__tavily__tavily_search"
+    ]
+  }
+}

@@ -112,17 +112,19 @@ Ollama 0.19〜0.21.x + Apple M5 + macOS 26 (Tahoe) の組み合わせでは、Me
 
 `OLLAMA_NUM_GPU=0` や CPU only モードでも回避できない。2026-04-19 時点で根本修正は未リリース。
 
-### 代替手段 1: Ollama 0.18.3 にダウングレード
+### 代替手段 1: Ollama 0.20.1 にダウングレード（実機動作確認済み・推奨）
 
-同ハードウェアでの動作が確認されている最終バージョン。
+**2026-04-19 に Apple M5 + macOS 26 実機で動作確認済み。**
 
 ```bash
-# Homebrew 経由
+# Homebrew 版を削除（モデルデータは消えない）
 brew uninstall ollama
-brew install ollama@0.18.3
-```
 
-Homebrew に古いバージョンがない場合は [GitHub Releases v0.18.3](https://github.com/ollama/ollama/releases/tag/v0.18.3) から `.dmg` を直接取得する。
+# GitHub Releases から 0.20.1 の .dmg を取得
+curl -L https://github.com/ollama/ollama/releases/download/v0.20.1/Ollama-darwin.dmg \
+  -o ~/Downloads/Ollama-0.20.1.dmg
+open ~/Downloads/Ollama-0.20.1.dmg
+```
 
 ### 代替手段 2: LM Studio（GUI、推奨）
 

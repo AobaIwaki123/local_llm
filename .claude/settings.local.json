@@ -8,7 +8,10 @@
       "Bash(sort -k4 -rn)",
       "Bash(awk '{print $4\"% \"$11}')",
       "Bash(cat ~/Library/Logs/Homebrew/ollama/*.log)",
-      "Bash(log show:*)"
+      "Bash(log show:*)",
+      "Bash(brew tap:*)",
+      "Bash(brew search:*)",
+      "Bash(ollama:*)"
     ]
   }
 }
